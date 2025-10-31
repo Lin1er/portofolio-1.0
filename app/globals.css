@@ -12,6 +12,16 @@
   --font-mono: var(--font-geist-mono);
 }
 
+@font-face {
+  font-family: 'HeadingNow';
+  src: url('../public/fonts/HeadingNow-16Bold.ttf') format('ttf');
+  font-weight: 300; /* sesuai weight */
+  font-style: normal;
+}
+
+/* Untuk alternatif gratis, ubah nama font sesuai yang dipakai */
+
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
