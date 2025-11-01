@@ -93,35 +93,76 @@ export const projects: {
   link: string;
   imageId: string;
 }[] = [
-  {
+ {
     title: "Dormitory Management System",
     description:
-      "A comprehensive web platform for data analytics, providing real-time insights through an intuitive dashboard.",
+      "A web-based platform developed to manage student dormitory activities, including permission requests, attendance tracking, and multi-role authentication for admins, guardians, and students.",
     link: "#",
-    imageId: "project-3",
+    imageId: "blank",
   },
   {
     title: "ELibrary Management System",
     description:
-      "A cross-platform mobile application designed to streamline team collaboration and project management on the go.",
+      "An online library system that enables students to browse, borrow, and manage books digitally, complete with admin tools for cataloging and activity monitoring.",
     link: "#",
-    imageId: "project-2",
+    imageId: "blank",
   },
   {
-    title: "Security Surveillance System",
+    title: "Student Return Monitoring System",
     description:
-      "An elegant e-commerce solution with a focus on user experience and seamless checkout process.",
+      "An integrated web and IoT system built to monitor student return schedules, automate entry validation, and provide real-time reporting for dormitory administrators.",
     link: "#",
-    imageId: "project-3",
+    imageId: "blank",
   },
   {
     title: "Uangku",
     description:
-      "A cross-platform mobile application designed to streamline team collaboration and project management on the go.",
+      "A personal finance tracking app that allows users to record expenses, analyze spending habits, and gain insights into their financial health through intuitive visualizations.",
     link: "#",
-    imageId: "project-2",
+    imageId: "blank",
   },
-
+  {
+    title: "WhatsApp Gateway",
+    description:
+      "A multi-device web gateway built with Laravel and Node.js using Baileys, enabling automated WhatsApp notifications from multiple applications through a centralized API interface.",
+    link: "#",
+    imageId: "blank",
+  },
+  {
+    title: "Interactive Portfolio Terminal",
+    description:
+      "A portfolio website built with Next.js and React that simulates a terminal interface, allowing visitors to explore projects, experiences, and contact information interactively.",
+    link: "#",
+    imageId: "blank",
+  },
+  {
+    title: "Finance Management Bot",
+    description:
+      "A Telegram bot designed to manage personal finances by processing text, voice notes, and receipt images, automatically categorizing and recording expenses into Google Sheets.",
+    link: "#",
+    imageId: "blank",
+  },
+  {
+    title: "Telegram Order Automation Bot",
+    description:
+      "An n8n-based Telegram bot connected to Google Sheets and an AI agent, capable of parsing order lists, matching product data, and logging transactions automatically.",
+    link: "#",
+    imageId: "blank",
+  },
+  {
+    title: "IoT Strobe Light Controller",
+    description:
+      "An ESP32-based automotive strobe light controller featuring 16-channel relay output, customizable blinking patterns, and Bluetooth connectivity for control via a Flutter mobile app.",
+    link: "#",
+    imageId: "blank",
+  },
+  {
+    title: "Home Server Setup",
+    description:
+      "A multi-node home server environment built using mini PCs and a main workstation, integrating NAS, network management via MikroTik, and containerized services through Docker.",
+    link: "#",
+    imageId: "blank",
+  },
 ];
 
 export const socialLinks = {
