@@ -1,97 +1,131 @@
 import { IconType } from "react-icons";
-import { SiTailwindcss, SiReact, SiNextdotjs, SiLaravel, SiJavascript, SiTypescript, SiHtml5, SiCss3, SiNodedotjs, SiArduino, SiMongodb, SiMysql, SiPostgresql } from 'react-icons/si';
+import {
+  SiTailwindcss,
+  SiReact,
+  SiNextdotjs,
+  SiLaravel,
+  SiJavascript,
+  SiTypescript,
+  SiHtml5,
+  SiCss3,
+  SiNodedotjs,
+  SiArduino,
+  SiMongodb,
+  SiMysql,
+  SiPostgresql,
+} from "react-icons/si";
 
-export const skills: { name: string; icon: IconType | IconType; color?: string }[] = [
+export const skills: {
+  name: string;
+  icon: IconType | IconType;
+  color?: string;
+}[] = [
   {
-    name: 'React',
+    name: "React",
     icon: SiReact,
-    color: 'bg-blue-100'
+    color: "bg-blue-100",
   },
   {
-    name: 'Next.js',
+    name: "Next.js",
     icon: SiNextdotjs,
-    color: 'bg-gray-100'
+    color: "bg-gray-100",
   },
   {
-    name: 'Laravel',
+    name: "Laravel",
     icon: SiLaravel,
-    color: 'bg-red-100'
+    color: "bg-red-100",
   },
   {
-    name: 'Tailwind CSS',
+    name: "Tailwind CSS",
     icon: SiTailwindcss,
-    color: 'bg-teal-100'
+    color: "bg-teal-100",
   },
   {
-    name: 'JavaScript',
+    name: "JavaScript",
     icon: SiJavascript,
-    color: 'bg-yellow-100'
+    color: "bg-yellow-100",
   },
   {
-    name: 'TypeScript',
+    name: "TypeScript",
     icon: SiTypescript,
-    color: 'bg-blue-200'
+    color: "bg-blue-200",
   },
   {
-    name: 'HTML5',
+    name: "HTML5",
     icon: SiHtml5,
-    color: 'bg-orange-100'
+    color: "bg-orange-100",
   },
   {
-    name: 'CSS3',
+    name: "CSS3",
     icon: SiCss3,
-    color: 'bg-blue-100'
+    color: "bg-blue-100",
   },
   {
-    name: 'Node.js',
+    name: "Node.js",
     icon: SiNodedotjs,
-    color: 'bg-green-100'
+    color: "bg-green-100",
   },
   {
-    name: 'Arduino',
+    name: "Arduino",
     icon: SiArduino,
-    color: 'bg-gray-200'
+    color: "bg-gray-200",
   },
   {
-    name: 'MongoDB',
+    name: "MongoDB",
     icon: SiMongodb,
-    color: 'bg-green-200'
+    color: "bg-green-200",
   },
   {
-    name: 'MySQL',
+    name: "MySQL",
     icon: SiMysql,
-    color: 'bg-blue-300'
+    color: "bg-blue-300",
   },
   {
-    name: 'PostgreSQL',
+    name: "PostgreSQL",
     icon: SiPostgresql,
-    color: 'bg-blue-400'
+    color: "bg-blue-400",
   },
 ];
 
-export const projects: { name: string; description: string; link: string; imageId: string }[] = [
+export const projects: {
+  title: string;
+  description: string;
+  link: string;
+  imageId: string;
+}[] = [
   {
-    name: 'Project Alpha',
-    description: 'A comprehensive web platform for data analytics, providing real-time insights through an intuitive dashboard.',
-    link: '#',
-    imageId: 'project-1',
+    title: "Dormitory Management System",
+    description:
+      "A comprehensive web platform for data analytics, providing real-time insights through an intuitive dashboard.",
+    link: "#",
+    imageId: "project-3",
   },
   {
-    name: 'Project Beta',
-    description: 'A cross-platform mobile application designed to streamline team collaboration and project management on the go.',
-    link: '#',
-    imageId: 'project-2',
+    title: "ELibrary Management System",
+    description:
+      "A cross-platform mobile application designed to streamline team collaboration and project management on the go.",
+    link: "#",
+    imageId: "project-2",
   },
   {
-    name: 'Project Gamma',
-    description: 'An elegant e-commerce solution with a focus on user experience and seamless checkout process.',
-    link: '#',
-    imageId: 'project-3',
+    title: "Security Surveillance System",
+    description:
+      "An elegant e-commerce solution with a focus on user experience and seamless checkout process.",
+    link: "#",
+    imageId: "project-3",
   },
+  {
+    title: "Uangku",
+    description:
+      "A cross-platform mobile application designed to streamline team collaboration and project management on the go.",
+    link: "#",
+    imageId: "project-2",
+  },
+
 ];
 
 export const socialLinks = {
   github: "https://github.com",
   linkedin: "https://linkedin.com",
   twitter: "https://twitter.com",
-}
+};

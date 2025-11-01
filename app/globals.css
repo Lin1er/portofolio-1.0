@@ -19,6 +19,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'HeadingNowHeavyItalic';
+  src: url('../public/fonts/HeadingNow-68HeavyItalic.ttf') format('ttf');
+  font-weight: 700; /* sesuai weight */
+  font-style: italic;
+}
+
 /* Untuk alternatif gratis, ubah nama font sesuai yang dipakai */
 
 
