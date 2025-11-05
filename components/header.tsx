@@ -52,7 +52,7 @@ export function Header() {
         <div
           className={cn(
             "fixed inset-0 top-14 z-40 md:hidden",
-            "bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 animate-in fade-in-20"
+            "bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 animate-in fade-in-20",
           )}
           onClick={() => setIsMenuOpen(false)}
         >
