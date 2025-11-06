@@ -1,4 +1,5 @@
-import * as React from 'react';
+import * as React from "react";
+import Image from "next/image";
 
 interface ProjectProps {
   title: string;
@@ -7,8 +8,13 @@ interface ProjectProps {
   imageId: string;
 }
 
-export const Project: React.FC<ProjectProps> = ({ title, description, link, imageId }) => {
-  const hasImage = imageId && imageId !== 'blank';
+export const Project: React.FC<ProjectProps> = ({
+  title,
+  description,
+  link,
+  imageId,
+}) => {
+  const hasImage = imageId && imageId !== "blank";
 
   return (
     <a
@@ -21,10 +27,13 @@ export const Project: React.FC<ProjectProps> = ({ title, description, link, imag
       <div className="w-full flex items-center gap-4 p-4 bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-300">
         {hasImage && (
           <div className="flex-shrink-0 w-24 h-24 md:w-32 md:h-32 rounded-md overflow-hidden bg-gray-50 border border-gray-100">
-            <img
+            <Image
               src={`/projects/${imageId}.png`}
               alt={title}
+              width={128}
+              height={128}
               className="w-full h-full object-cover"
+              sizes="(min-width: 768px) 128px, 96px"
             />
           </div>
         )}
@@ -40,11 +49,23 @@ export const Project: React.FC<ProjectProps> = ({ title, description, link, imag
 
         {/* subtle chevron to indicate link (optional; remove if undesired) */}
         <div className="hidden md:flex items-center text-gray-400">
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M9 5l7 7-7 7"
+            />
           </svg>
         </div>
       </div>
     </a>
   );
-}
+};
