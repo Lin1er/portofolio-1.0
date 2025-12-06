@@ -18,71 +18,85 @@ import {
 export const skills: {
   name: string;
   icon: IconType | IconType;
+  iconColor?: string;
   color?: string;
 }[] = [
   {
     name: "React",
     icon: SiReact,
+    iconColor: "text-[#61DAFB]",
     color: "bg-blue-100",
   },
   {
     name: "Next.js",
     icon: SiNextdotjs,
+    iconColor: "text-[#000000]",
     color: "bg-gray-100",
   },
   {
     name: "Laravel",
     icon: SiLaravel,
+    iconColor: "text-[#FF2D20]",
     color: "bg-red-100",
   },
   {
     name: "Tailwind CSS",
     icon: SiTailwindcss,
+    iconColor: "text-[#38B2AC]",
     color: "bg-teal-100",
   },
   {
     name: "JavaScript",
     icon: SiJavascript,
+    iconColor: "text-[#F7DF1E]",
     color: "bg-yellow-100",
   },
   {
     name: "TypeScript",
     icon: SiTypescript,
+    iconColor: "text-[#3178C6]",
     color: "bg-blue-200",
   },
   {
     name: "HTML5",
     icon: SiHtml5,
+    iconColor: "text-[#E34F26]",
     color: "bg-orange-100",
   },
   {
     name: "CSS3",
     icon: SiCss3,
+    iconColor: "text-[#1572B6]",
     color: "bg-blue-100",
   },
   {
     name: "Node.js",
     icon: SiNodedotjs,
+    iconColor: "text-[#339933]",
     color: "bg-green-100",
   },
   {
     name: "Arduino",
     icon: SiArduino,
+    iconColor: "text-[#00979D]",
     color: "bg-gray-200",
   },
   {
     name: "MongoDB",
     icon: SiMongodb,
+    iconColor: "text-[#47A248]",
     color: "bg-green-200",
   },
   {
     name: "MySQL",
     icon: SiMysql,
+    iconColor: "text-[#4479A1]",
     color: "bg-blue-300",
   },
   {
     name: "PostgreSQL",
     icon: SiPostgresql,
+    iconColor: "text-[#336791]",
     color: "bg-blue-400",
   },
 ];

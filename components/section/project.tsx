@@ -3,6 +3,8 @@
 import Image from "next/image";
 import { projects } from "@/lib/data";
 import { Project } from "@/components/ui/project";
+import Title from "@/components/ui/title";
+
 
 export default function ProjectSection() {
   return (

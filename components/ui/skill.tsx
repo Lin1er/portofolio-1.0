@@ -6,9 +6,10 @@ interface SkillProps {
   name: string;
   color?: string; // bisa "bg-blue-500" ATAU "#f4f4f4"
   icon: IconType;
+  iconColor?: string;
 }
 
-export const Skill: React.FC<SkillProps> = ({ name, icon: Icon, color }) => {
+export const Skill: React.FC<SkillProps> = ({ name, icon: Icon, color, iconColor }) => {
   const isCustomColor = color?.startsWith("#") || color?.startsWith("rgb");
 
   return (
@@ -19,7 +20,7 @@ export const Skill: React.FC<SkillProps> = ({ name, icon: Icon, color }) => {
       )}
       style={isCustomColor ? { backgroundColor: color } : undefined}
     >
-      <Icon className="md:h-5 md:w-5 h-3 w-3 mr-2 text-[#8c6350]" />
+      <Icon className={`md:h-5 md:w-5 h-3 w-3 mr-2 ${iconColor || "text-[#8c6350]"}`} />
       <span className="text-xs md:text-lg  text-gray-800">{name}</span>
     </div>
   );
